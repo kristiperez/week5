@@ -26,7 +26,6 @@ function showDetails(id) {
     req.send()
 }
 
-
 req.open('GET',moviesURL)
 
 req.addEventListener('load',() => {

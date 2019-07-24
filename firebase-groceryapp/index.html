@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>GroceryAppFirebase</title>
+</head>
+<body>
+
+    <div id="wrapper">
+
+    <div id="centerDiv">   
+
+    <h3>Grocery App</h3>
+
+    <div id="createStoreDiv">
+        <input type="text" id="storeTextBox" placeholder="Enter store" />
+        <input type="text" id="addressTextBox" placeholder="Enter Address" />
+        <button id="addStore">Add Store</button>
+    </div>
+
+    <div id="storeListDiv">
+
+    </div>
+</div> 
+</div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDw_Q6zTENqNNlHBPrAmKlgh-5n3nR8px4",
+    authDomain: "groceryappfb.firebaseapp.com",
+    databaseURL: "https://groceryappfb.firebaseio.com",
+    projectId: "groceryappfb",
+    storageBucket: "",
+    messagingSenderId: "107218441833",
+    appId: "1:107218441833:web:9f8858fddf9ab5cf"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="app.js"></script>
+</body>
+</html>
