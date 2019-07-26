@@ -30,7 +30,7 @@ req.open('GET',moviesURL)
 
 req.addEventListener('load',() => {
     let movies = JSON.parse(event.currentTarget.responseText)
-
+    // movie is a variable that represents one single item in the array
     let movieItems = movies.Search.map(movie => {
         return `<div class="movieItem">
                     <img src='${movie.Poster}' onclick="showDetails('${movie.imdbID}')"/>

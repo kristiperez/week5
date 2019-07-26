@@ -57,14 +57,19 @@ function deleteOrder(email) {
     console.log(orderURL)
 
     fetch(orderURL, {
-        method:'DELETE'
-    }).then(res => res.json())
+        method:'DELETE' //this returns a promise
+    }).then(res => res.json()) //this also returns a promise.  res is a variable that represents the response you get. you then call the json function on it. the arrow indicates an anonysmous function, but the function isn't called res
+    //below is the same as (res => res.json()) above
+    // function(res) {
+    //    return res.json
     .then (json => {
         console.log(json)
         displayOrders()
     } )
 }
 
+
+//if you are confused about how to get at the right property, type json.in the console, after you return the object
 submitButton.addEventListener('click', function () {
     let emailEntered = emailTextBox.value
     let coffeeEntered = coffeeTextBox.value
