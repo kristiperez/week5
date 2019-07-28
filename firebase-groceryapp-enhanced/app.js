@@ -78,3 +78,5 @@ function displayStores(stores) {
 
 }
 
+//make a ref to the items array for the specific store and loop through the array checking if the item name matches what you wantto delete //  loop through this --> stores/storeID/items
+//THEN DELETE .remove()
